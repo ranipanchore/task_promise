@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: larger;
+            margin-top: 50px;
+        }
+        form > input{
+            font-size: larger;
+            padding: 20px;
+            margin: 20px 10px;
+        }
+        #btn{
+            width: 95%;
+        }
+        #img1{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="main" style="display: flex;">
+        <form>
+            <input type="text" placeholder="Enter UPI Id" id="upi"><br>
+            <input type="Password" placeholder="Enter Password" id="pwd"><br>
+            <input type="submit" value="submit" id="btn"/>
+        </form>
+        <div id="status_process"></div>
+        <!--
+        pending: https://europe1.discourse-cdn.com/figma/original/3X/6/1/6173a1aae8372541cfe858bbadccf198e2935f89.gif
+        success : https://www.icegif.com/wp-content/uploads/2023/08/icegif-727.gif
+        failed : https://cdn.pixabay.com/animation/2023/01/01/10/31/10-31-59-692_512.gif -->
+    </div>
+</body> 
+</html>
+<script src="./index.js"></script>
